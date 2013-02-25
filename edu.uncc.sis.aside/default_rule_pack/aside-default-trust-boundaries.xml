@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrustBoundaries>  
+    <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)?ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getParameter]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getContentType]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getProtocol]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)?ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getScheme]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)?ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getServerName]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getAuthType]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.Cookie]]></DeclarationClass>
+		<MethodName><![CDATA[getComment]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.Cookie]]></DeclarationClass>
+		<MethodName><![CDATA[getValue]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.Cookie]]></DeclarationClass>
+		<MethodName><![CDATA[getPath]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.HttpServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getQueryString]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.HttpServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getHeader]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.HttpServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getPathInfo]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.HttpServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getRequestURI]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.ServletConfig]]></DeclarationClass>
+		<MethodName><![CDATA[getInitParameter]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[java\.io\.PrintStream]]></DeclarationClass>
+		<MethodName><![CDATA[println]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[java\.io\.PrintWriter]]></DeclarationClass>
+		<MethodName><![CDATA[println]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+
+    <TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[javax\.servlet\.jsp\.JspWriter]]></DeclarationClass>
+		<MethodName><![CDATA[println]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[java\.io\.PrintStream]]></DeclarationClass>
+		<MethodName><![CDATA[print]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[java\.io\.PrintWriter]]></DeclarationClass>
+		<MethodName><![CDATA[print]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+
+    <TrustBoundary type="MethodInvocation" attr="output">
+		<DeclarationClass><![CDATA[javax\.servlet\.jsp\.JspWriter]]></DeclarationClass>
+		<MethodName><![CDATA[print]]></MethodName>
+		<ArgumentOrdinal>0</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.util\.Properties]]></DeclarationClass>
+		<MethodName><![CDATA[getProperty]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.sql\.ResultSet]]></DeclarationClass>
+		<MethodName><![CDATA[getString]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.net\.URLConnection]]></DeclarationClass>
+		<MethodName><![CDATA[getContentType]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.http\.HttpServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getRequestURL]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.StringBuffer]]></ReturnType>
+	</TrustBoundary>
+	
+	<!-- 
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[org\.apache\.struts\.upload\.FormFile]]></DeclarationClass>
+		<MethodName><![CDATA[getFileName]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.lang\.System]]></DeclarationClass>
+		<MethodName><![CDATA[getProperty]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.String]]></ReturnType>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java.io.BufferedReader]]></DeclarationClass>
+		<MethodName><![CDATA[readLine]]></MethodName>
+		<ReturnType><![CDATA[java.lang.String]]></ReturnType>
+    </TrustBoundary>	
+
+    <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.jdo\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[execute]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.Object]]></ReturnType>
+	</TrustBoundary>
+	
+	  <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.lang\.System]]></DeclarationClass>
+		<MethodName><![CDATA[getProperties]]></MethodName>
+		<ReturnType><![CDATA[java\.util\.Properties]]></ReturnType>
+	</TrustBoundary>
+	
+	  <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[java\.io\.Reader]]></DeclarationClass>
+		<MethodName><![CDATA[read]]></MethodName>
+		<ReturnType><![CDATA[int]]></ReturnType>
+	</TrustBoundary>
+
+	 <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getInputStream]]></MethodName>
+		<ReturnType><![CDATA[javax\.servlet\.ServletInputStream]]></ReturnType>
+	</TrustBoundary>
+
+	 <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[org\.hibernate\.Session]]></DeclarationClass>
+		<MethodName><![CDATA[get]]></MethodName>
+		<ReturnType><![CDATA[java\.lang\.Object]]></ReturnType>
+	</TrustBoundary>
+	
+    <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[org\.hibernate\.Criteria]]></DeclarationClass>
+		<MethodName><![CDATA[list]]></MethodName>
+		<ReturnType><![CDATA[java\.util\.List]]></ReturnType>
+	</TrustBoundary>
+	
+	 <TrustBoundary type="MethodInvocation" attr="input">
+		<DeclarationClass><![CDATA[javax\.servlet\.(http\.Http)?ServletRequest]]></DeclarationClass>
+		<MethodName><![CDATA[getParameterMap]]></MethodName>
+		<ReturnType><![CDATA[java\.util\.Map]]></ReturnType>
+	</TrustBoundary>
+
+	-->
+	<!--the followings are newly added rules for SQL input validation-->
+
+	
+<!-- <TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setInt]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setString]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setShort]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setLong]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setFloat]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setDouble]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setURL]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+	<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setObject]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setParameter]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setString]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+only cover some common methods of hibernate query
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setInt]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setCharacter]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+	<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setDouble]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+		<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setFloat]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+		<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setLong]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+		<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setInteger]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+			<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setText]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+	
+			<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[org\.hibernate\.Query]]></DeclarationClass>
+		<MethodName><![CDATA[setShort]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary> -->
+	
+<!--
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setBigDecimal]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setDate]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setArray]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setBytes]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setRef]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+
+<TrustBoundary type="MethodInvocation" attr="specialOutput">
+		<DeclarationClass><![CDATA[java\.sql\.PreparedStatement]]></DeclarationClass>
+		<MethodName><![CDATA[setCharacterStream]]></MethodName>
+		<ArgumentOrdinal>1</ArgumentOrdinal>
+	</TrustBoundary>
+-->
+<!--
+MethodInvoation that ASIDE should show a warnning at each place used
+-->
+<TrustBoundary type="MethodInvocation" attr="warning">
+		<DeclarationClass><![CDATA[java\.sql\.Statement]]></DeclarationClass>
+		<MethodName><![CDATA[execute]]></MethodName>
+		<ReturnType><![CDATA[boolean]]></ReturnType>
+	</TrustBoundary>
+	This one has return type int[], not sure whether the aside program has 
+	handled such type or not at this point, need follow up afterwards 
+	<TrustBoundary type="MethodInvocation" attr="warning">
+		<DeclarationClass><![CDATA[java\.sql\.Statement]]></DeclarationClass>
+		<MethodName><![CDATA[executeBatch]]></MethodName>
+		<ReturnType><![CDATA[int[]]]></ReturnType>
+	</TrustBoundary>
+	<TrustBoundary type="MethodInvocation" attr="warning">
+		<DeclarationClass><![CDATA[java\.sql\.Statement]]></DeclarationClass>
+		<MethodName><![CDATA[executeQuery]]></MethodName>
+		<ReturnType><![CDATA[java\.sql\.ResultSet]]></ReturnType>
+	</TrustBoundary>
+	<TrustBoundary type="MethodInvocation" attr="warning">
+		<DeclarationClass><![CDATA[java\.sql\.Statement]]></DeclarationClass>
+		<MethodName><![CDATA[executeUpdate]]></MethodName>
+		<ReturnType><![CDATA[int]]></ReturnType>
+	</TrustBoundary>
+	<TrustBoundary type="MethodInvocation" attr="warning">
+		<DeclarationClass><![CDATA[java\.sql\.Statement]]></DeclarationClass>
+		<MethodName><![CDATA[getResultSet]]></MethodName>
+		<ReturnType><![CDATA[java\.sql\.ResultSet]]></ReturnType>
+	</TrustBoundary>
+	
+</TrustBoundaries>
